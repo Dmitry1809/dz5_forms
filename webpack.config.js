@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  // Указываем точную точку входа, где лежит ваш JS
   entry: './src/js/app.js', 
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -25,7 +24,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // Наш исходный HTML шаблон
+      template: './src/index.html',
     }),
   ],
 };
