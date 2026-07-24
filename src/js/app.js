@@ -1,4 +1,4 @@
-import '../css/style.css'; // Импортируем стили, чтобы Webpack их подцепил
+import "../css/style.css"; // Импортируем стили, чтобы Webpack их подцепил
 
 export class PopoverWidget {
   constructor() {
@@ -54,7 +54,6 @@ export class PopoverWidget {
 }
 
 // Инициализируем виджет напрямую без ожидания события
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   new PopoverWidget();
 }
-
